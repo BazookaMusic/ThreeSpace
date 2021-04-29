@@ -1,4 +1,4 @@
-# Earth and Stars
+# Three Space
 
 An animation of earth and stars. Three.js starter project based on the boiler-plate by Edwin Webb.
 See:

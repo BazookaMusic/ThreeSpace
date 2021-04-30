@@ -8,14 +8,15 @@ export default class SeedScene extends Group {
     super();
     
     this.earth = new Earth();
-    const lights = new BasicLights();
+    this.lights = new BasicLights();
     const stars = new Stars();
 
-    this.add(this.earth, lights, stars);
+    this.add(this.earth, this.lights, stars);
   }
 
   update(timeStamp) {
     this.earth.rotation.y =  timeStamp / 10000;
+    this.lights.rotation.y = timeStamp / (10000 * 365);
     //this.rotation.y = timeStamp / 10000;
   }
 }
